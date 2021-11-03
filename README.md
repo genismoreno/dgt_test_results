@@ -1,11 +1,23 @@
-# dgt_test_results
+# DGT Test results scraper
 
 ## Basic scraper for DGT test results
 
-Right now just capable of checking if error message is displayed (i.e. when results are not published yet)
+Providing the body and the headers with the user credentials 
+(DNI, fecha examen, tipo permiso, fecha de nacimiento), 
+results request is automatized. 
 
-When having access to a succesful result, code may be extended.
+Useful if integrated in an iterative environment.
 
+### How to run
+1. `git clone git@github.com:genismoreno/dgt_test_results.git`
+2. `cd dgt_test_results`
+3. `pip install -r requirements.txt`
+4. Create _body.txt_ and _headers.txt_ files
+5. `python main.py`
+
+### Requirements
+1. requests
+2. lxml (html)
 
 ### Files to be provided
 All info could be provided from the browser console when accessing via web (recommended way).
